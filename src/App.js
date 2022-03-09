@@ -2,11 +2,13 @@ import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
 import Contact from './components/Contact/Contact';
 import Nav from './components/Navbar/Nav';
+import TechStack from './components/TechStack/TechStack';
 function App() {
   return (
     <div className='App'>
       <Nav />
       <AboutMe />
+      <TechStack />
       <Contact />
     </div>
   );
