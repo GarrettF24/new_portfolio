@@ -1,14 +1,16 @@
 import './App.css';
-import AboutMe from './components/AboutMe/AboutMe';
-import Contact from './components/Contact/Contact';
 import Nav from './components/Navbar/Nav';
+import AboutMe from './components/AboutMe/AboutMe';
 import TechStack from './components/TechStack/TechStack';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 function App() {
   return (
     <div className='App'>
       <Nav />
       <AboutMe />
       <TechStack />
+      <Projects />
       <Contact />
     </div>
   );
