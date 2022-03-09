@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import { FiGithub } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
-// import './Contact.css';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const SERVICE_ID = 'service_bbtqu7c';
 const TEMPLATE_ID = 'template_87gxjuy';
@@ -33,11 +34,19 @@ export default function Contact() {
     e.target.reset();
   };
   return (
-    <div className='contact-container'>
+    <div style={{ border: '3px solid green' }} className='contact-container'>
       <div className='contact-title'>
         <h1>Email or connect with me on LinkedIn!</h1>
       </div>
-      <div className='professional-links'>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          width: '60%',
+          margin: 'auto',
+        }}
+        className='professional-links'
+      >
         <div className='linked-in-link'>
           <a
             className='links-to-pages'
@@ -59,44 +68,76 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <div className='contact-form'>
-        <form onSubmit={handleOnSubmit}>
-          <input
-            className='email-info'
-            id='form-input-control-email'
-            // control={Input}
-            label='Email'
-            name='from_email'
-            placeholder='Email…'
-            required
-            icon='mail'
-            // iconPosition="left"
-          />
-          <input
-            className='email-info'
-            id='form-input-control-last-name'
-            // control={Input}
-            label='Name'
-            name='from_name'
-            placeholder='Name…'
-            required
-            icon='user circle'
-            // iconPosition="left"
-          />
-          <textarea
-            className='email-info'
-            id='form-textarea-control-opinion'
-            // control={TextArea}
-            label='Message'
-            name='message'
-            placeholder='Message…'
-            required
-          />
-          <Button type='submit' color='green'>
-            Submit
-          </Button>
-        </form>
+      <div
+        style={{
+          // border: '1px solid red',
+          display: 'flex',
+          width: '70%',
+          justifyContent: 'center',
+          margin: 'auto',
+        }}
+        className='contact-form'
+      >
+        <Form style={{ width: '100%' }} onSubmit={handleOnSubmit}>
+          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+            <Form.Control type='email' name='from_email' placeholder='Email…' required />
+          </Form.Group>
+          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+            <Form.Control label='Name' name='from_name' placeholder='Name…' required />
+          </Form.Group>
+          <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
+            <Form.Control
+              name='message'
+              placeholder='Message…'
+              required
+              as='textarea'
+              rows={3}
+            />
+          </Form.Group>
+          <Button type='submit' variant='outline-success'>
+            Send
+          </Button>{' '}
+        </Form>
       </div>
     </div>
   );
+}
+
+{
+  /* <form onSubmit={handleOnSubmit}>
+<input
+  className='email-info'
+  id='form-input-control-email'
+  // control={Input}
+  label='Email'
+  name='from_email'
+  placeholder='Email…'
+  required
+  icon='mail'
+  // iconPosition="left"
+/>
+<input
+  className='email-info'
+  id='form-input-control-last-name'
+  // control={Input}
+  label='Name'
+  name='from_name'
+  placeholder='Name…'
+  required
+  icon='user circle'
+  // iconPosition="left"
+/>
+<textarea
+  className='email-info'
+  id='form-textarea-control-opinion'
+  // control={TextArea}
+  label='Message'
+  name='message'
+  placeholder='Message…'
+  required
+/>
+<Button type='submit' color='green'>
+  Submit
+</Button>
+</form> */
 }
