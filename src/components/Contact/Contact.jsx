@@ -34,7 +34,7 @@ export default function Contact() {
     e.target.reset();
   };
   return (
-    <div style={{ border: '3px solid green' }} className='contact-container'>
+    <div className='contact-container'>
       <div className='contact-title'>
         <h1>Email or connect with me on LinkedIn!</h1>
       </div>

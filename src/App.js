@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutMe from './components/AboutMe/AboutMe';
 import Contact from './components/Contact/Contact';
 import Nav from './components/Navbar/Nav';
 function App() {
   return (
     <div className='App'>
       <Nav />
+      <AboutMe />
       <Contact />
     </div>
   );
