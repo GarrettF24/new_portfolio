@@ -34,7 +34,7 @@ export default function Contact() {
     e.target.reset();
   };
   return (
-    <div className='contact-container'>
+    <div style={{ marginBottom: '40px' }} className='contact-container'>
       <div className='contact-title'>
         <h3>Email or connect with me on LinkedIn!</h3>
       </div>
@@ -78,15 +78,31 @@ export default function Contact() {
         }}
         className='contact-form'
       >
-        <Form style={{ width: '100%' }} onSubmit={handleOnSubmit}>
-          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
-            <Form.Control type='email' name='from_email' placeholder='Email…' required />
+        <Form
+          style={{ width: '100%', boxShadow: '0px 5px 6px 1px', background: 'white' }}
+          onSubmit={handleOnSubmit}
+        >
+          <Form.Group className='mt-3 mb-3' controlId='exampleForm.ControlInput1'>
+            <Form.Control
+              style={{ width: '70%', margin: 'auto' }}
+              type='email'
+              name='from_email'
+              placeholder='Email'
+              required
+            />
           </Form.Group>
           <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
-            <Form.Control label='Name' name='from_name' placeholder='Name…' required />
+            <Form.Control
+              style={{ width: '70%', margin: 'auto' }}
+              label='Name'
+              name='from_name'
+              placeholder='Name'
+              required
+            />
           </Form.Group>
           <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
             <Form.Control
+              style={{ width: '95%', margin: 'auto' }}
               name='message'
               placeholder='Message…'
               required
@@ -94,7 +110,7 @@ export default function Contact() {
               rows={3}
             />
           </Form.Group>
-          <Button type='submit' variant='outline-success'>
+          <Button className='mb-2' type='submit' variant='outline-success'>
             Send
           </Button>{' '}
         </Form>

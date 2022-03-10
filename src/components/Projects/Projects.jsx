@@ -12,15 +12,16 @@ function Projects() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        border: '2px solid red',
         justifyContent: 'space-between',
-        width: '100%',
-        margin: '3px auto',
+        width: '70%',
+        margin: '25px auto',
         alignItems: 'center',
+        boxShadow: '0px 5px 6px 1px',
+        background: 'white',
       }}
       className='projects-container'
     >
-      <Card className='m-3' style={{ width: '70%' }}>
+      <Card id='card' className='m-3' style={{ width: '100%' }}>
         <Card.Img variant='top' src={GJAM} />
         <Card.Body>
           <Card.Title>g'Jam App</Card.Title>
@@ -48,7 +49,7 @@ function Projects() {
         </Card.Body>
       </Card>
 
-      <Card className='m-3' style={{ width: '70%' }}>
+      <Card id='card' className='m-3' style={{ width: '100%' }}>
         <Card.Img variant='top' src={MuayThaiPicture} />
         <Card.Body>
           <Card.Title>Muay Thai Guy</Card.Title>

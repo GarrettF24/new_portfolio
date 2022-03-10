@@ -1,17 +1,17 @@
 .App {
   text-align: center;
-  background-color: rgba(101, 102, 103, 0.167);
+  background-color: rgba(206, 198, 198, 0.356);
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .picture {
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
