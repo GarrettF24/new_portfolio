@@ -4,14 +4,20 @@ import AboutMe from './components/AboutMe/AboutMe';
 import TechStack from './components/TechStack/TechStack';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import HEADSHOT from './assets/headshot.jpg';
 function App() {
   return (
     <div className='App'>
       <Nav />
-      <AboutMe />
-      <TechStack />
-      <Projects />
-      <Contact />
+      <div className='app-container'>
+        <div className='picture'>
+          <img src={HEADSHOT} />
+        </div>
+        <AboutMe />
+        <TechStack />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }
