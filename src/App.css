@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgba(101, 102, 103, 0.167);
 }
 
 .app-container {
@@ -9,6 +10,12 @@
   margin: auto;
 }
 
-.picture img {
-  width: 30%;
+.picture {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 80%;
+  border-radius: 15px;
 }

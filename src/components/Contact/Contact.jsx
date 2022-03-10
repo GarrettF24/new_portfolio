@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <div className='contact-container'>
       <div className='contact-title'>
-        <h1>Email or connect with me on LinkedIn!</h1>
+        <h3>Email or connect with me on LinkedIn!</h3>
       </div>
       <div
         style={{
@@ -54,7 +54,7 @@ export default function Contact() {
             href='https://www.linkedin.com/in/garrettfoster24/'
             rel='noreferrer'
           >
-            <FiLinkedin />
+            <FiLinkedin style={{ fontSize: '3rem' }} />
           </a>
         </div>
         <div className='github-link'>
@@ -64,7 +64,7 @@ export default function Contact() {
             rel='noreferrer'
             href='https://github.com/GarrettF24'
           >
-            <FiGithub />
+            <FiGithub style={{ fontSize: '3rem' }} />
           </a>
         </div>
       </div>

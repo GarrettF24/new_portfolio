@@ -2,13 +2,12 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-
 import LOGO from '../../assets/garrett-logo-white.png';
 
 const Navigation = () => {
   return (
     <Navbar
-      style={{ opacity: '0.9' }}
+      style={{ opacity: '0.9', position: 'sticky' }}
       className='mb-3'
       bg='dark'
       variant='dark'

@@ -7,7 +7,7 @@ import Contact from './components/Contact/Contact';
 import HEADSHOT from './assets/headshot.jpg';
 function App() {
   return (
-    <div className='App'>
+    <div id='home' className='App'>
       <Nav />
       <div className='app-container'>
         <div className='picture'>
@@ -15,8 +15,12 @@ function App() {
         </div>
         <AboutMe />
         <TechStack />
-        <Projects />
-        <Contact />
+        <div id='projects'>
+          <Projects />
+        </div>
+        <div id='contact'>
+          <Contact />
+        </div>
       </div>
     </div>
   );

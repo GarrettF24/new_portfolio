@@ -3,11 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function AboutMe() {
   return (
-    <div
-      style={{ border: '1px solid blue', width: '70%', margin: 'auto' }}
-      className='about-me-container'
-    >
-      <h1>Heres some info on me!</h1>
+    <div style={{ width: '70%', margin: ' 1rem auto' }} className='about-me-container'>
       <Accordion defaultActiveKey='0' flush>
         <Accordion.Item eventKey='0'>
           <Accordion.Header>Everything dev related</Accordion.Header>
