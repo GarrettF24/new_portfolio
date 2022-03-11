@@ -1,9 +1,9 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-
+import './AboutMe.css';
 function AboutMe() {
   return (
-    <div style={{ width: '70%', margin: ' 1rem auto' }} className='about-me-container'>
+    <div className='about-me-container'>
       <Accordion defaultActiveKey='0' flush>
         <Accordion.Item eventKey='0'>
           <Accordion.Header>Everything dev related</Accordion.Header>

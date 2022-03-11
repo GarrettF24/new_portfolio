@@ -1,0 +1,10 @@
+.about-me-container {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+@media (max-width: 700px) {
+  .about-me-container {
+    width: 100%;
+  }
+}

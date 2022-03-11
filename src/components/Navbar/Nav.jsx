@@ -16,7 +16,7 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand href='#root'>
-          <img style={{ width: '20%' }} className='image' src={LOGO} alt='logo' />
+          <h3>Home</h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
