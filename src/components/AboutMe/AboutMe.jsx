@@ -4,9 +4,10 @@ import './AboutMe.css';
 function AboutMe() {
   return (
     <div className='about-me-container'>
+      <h5>Garrett Foster | grfoster24@gmail.com</h5>
       <Accordion defaultActiveKey='0' flush>
         <Accordion.Item eventKey='0'>
-          <Accordion.Header>Everything dev related</Accordion.Header>
+          <Accordion.Header>The journey so far...</Accordion.Header>
           <Accordion.Body>
             I started my developer journey shortly after covid began, I had always been
             looking for something to keep me more engaged and mentally stimulated. After
@@ -20,7 +21,7 @@ function AboutMe() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey='1'>
-          <Accordion.Header>Personal</Accordion.Header>
+          <Accordion.Header>A little more about me...</Accordion.Header>
           <Accordion.Body>
             Outside of learning data structures, solving algorithms, and developing apps I
             have a few things I really enjoy. I love reading, my favorite genre is fantasy
@@ -29,7 +30,8 @@ function AboutMe() {
             of my goals to go train in Thailand with the real nak muays. Hiking in the
             White Mountains and being in nature is my favorite way to reset. I always have
             a great time when I am with friends and family so I put in an effort to see
-            them as much as possible.
+            them as much as possible. I was born and raised about 10 minutes from Gillette
+            stadium and have been a Patriots fan my whole life.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

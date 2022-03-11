@@ -8,20 +8,7 @@ import { FiGithub } from 'react-icons/fi';
 import './Projects.css';
 function Projects() {
   return (
-    <div
-      // style={{
-      // display: 'flex',
-      // flexDirection: 'column',
-      // justifyContent: 'space-between',
-      // width: '100%',
-      // margin: '100px auto',
-      // overflow: 'hidden',
-      // alignItems: 'center',
-      // boxShadow: '0px 5px 6px 1px',
-      // background: 'white',
-      // }}
-      className='projects-container'
-    >
+    <div className='projects-container'>
       <Card id='card' className='m-3' style={{ width: '100%' }}>
         <Card.Img variant='top' src={GJAM} />
         <Card.Body>
@@ -43,7 +30,9 @@ function Projects() {
             {' '}
             <FiGithub />
           </Card.Link>
-          <Card.Link href='https://gjam-app.netlify.app/'>Website</Card.Link>
+          <Card.Link target={'_blank'} href='https://gjam-app.netlify.app/'>
+            Website
+          </Card.Link>
         </Card.Body>
       </Card>
       <Card id='card' className='m-3' style={{ width: '100%' }}>
