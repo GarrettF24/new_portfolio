@@ -12,7 +12,6 @@ function TechStack() {
         <Carousel.Item>
           <img className='d-block w-100' src={MERN} alt='First slide' />
           <Carousel.Caption>
-            <h3>MERN STACK</h3>
             <p>The main stack I work with.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -20,7 +19,6 @@ function TechStack() {
           <img className='d-block w-100' src={BASICS} alt='Second slide' />
 
           <Carousel.Caption>
-            <h3>HTML5, JS, CSS3</h3>
             <p>How my coding journey started, and still use on a daily basis</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -28,7 +26,6 @@ function TechStack() {
           <img className='d-block w-100' src={RUBY} alt='Third slide' />
 
           <Carousel.Caption>
-            <h3>Ruby on Rails</h3>
             <p>
               I am not as well versed in rails as mern, but have had some exposure to it.
             </p>
