@@ -1,41 +1,41 @@
 import React from 'react';
-import MERN from '../../assets/mern-stack.jpg';
 import Carousel from 'react-bootstrap/Carousel';
+
+import MERN from '../../assets/mern-stack.jpeg';
+import BASICS from '../../assets/html-css-js.png';
+import RUBY from '../../assets/ruby-on-rails.webp';
+import './TechStack.css';
 function TechStack() {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img className='d-block w-100' src={MERN} alt='First slide' />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className='d-block w-100'
-          src='holder.js/800x400?text=Second slide&bg=282c34'
-          alt='Second slide'
-        />
+    <div className='carousel-container'>
+      <Carousel fade>
+        <Carousel.Item>
+          <img className='d-block w-100' src={MERN} alt='First slide' />
+          <Carousel.Caption>
+            <h3>MERN STACK</h3>
+            <p>The main stack I work with.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className='d-block w-100' src={BASICS} alt='Second slide' />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className='d-block w-100'
-          src='holder.js/800x400?text=Third slide&bg=20232a'
-          alt='Third slide'
-        />
+          <Carousel.Caption>
+            <h3>HTML5, JS, CSS3</h3>
+            <p>How my coding journey started, and still use on a daily basis</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className='d-block w-100' src={RUBY} alt='Third slide' />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          <Carousel.Caption>
+            <h3>Ruby on Rails</h3>
+            <p>
+              I am not as well versed in rails as mern, but have had some exposure to it.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 }
 
