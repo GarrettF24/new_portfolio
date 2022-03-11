@@ -25,7 +25,7 @@ const Navigation = () => {
             <Nav.Link href='#contact'>Contact</Nav.Link>
             <Nav.Link
               target={'_blank'}
-              href='https://docs.google.com/document/d/1ADNCLJr5hCvf4NtNEXDo-JHYDWS1jPOVcljPTAzCS8Q/edit?usp=sharing'
+              href='https://drive.google.com/file/d/1UHfJiJkmsWWeJ8l0hkAcnO1uHrkwvmW5/view?usp=sharing'
             >
               Resume
             </Nav.Link>

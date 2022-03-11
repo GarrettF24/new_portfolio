@@ -5,21 +5,21 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import GJAM from '../../assets/gjam.png';
 import MuayThaiPicture from '../../assets/muay-thai-guy.png';
 import { FiGithub } from 'react-icons/fi';
-
+import './Projects.css';
 function Projects() {
   return (
     <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        width: '60%',
-        margin: '25px auto',
-        overflow: 'hidden',
-        alignItems: 'center',
-        boxShadow: '0px 5px 6px 1px',
-        background: 'white',
-      }}
+      // style={{
+      // display: 'flex',
+      // flexDirection: 'column',
+      // justifyContent: 'space-between',
+      // width: '100%',
+      // margin: '100px auto',
+      // overflow: 'hidden',
+      // alignItems: 'center',
+      // boxShadow: '0px 5px 6px 1px',
+      // background: 'white',
+      // }}
       className='projects-container'
     >
       <Card id='card' className='m-3' style={{ width: '100%' }}>
@@ -27,11 +27,8 @@ function Projects() {
         <Card.Body>
           <Card.Title>g'Jam App</Card.Title>
           <Card.Text style={{ fontSize: '16px' }}>
-            This is an eCommerce jam store that lets users log in with the option to view,
-            create, and edit jams. Jams are stored in a database so that users can see
-            jams they created and jams created by other users. If a user is not signed in,
-            they will not be able to edit or create a jam. A shopping cart is available to
-            logged in users so they can add and remove jams.
+            eCommerce app will full CRUD, authorization, and authentication. When logged
+            in users can create their own jams
           </Card.Text>
         </Card.Body>
         <ListGroup className='list-group-flush'>
@@ -49,16 +46,13 @@ function Projects() {
           <Card.Link href='https://gjam-app.netlify.app/'>Website</Card.Link>
         </Card.Body>
       </Card>
-
       <Card id='card' className='m-3' style={{ width: '100%' }}>
         <Card.Img variant='top' src={MuayThaiPicture} />
         <Card.Body>
           <Card.Title>Muay Thai Guy</Card.Title>
           <Card.Text style={{ fontSize: '16px' }}>
-            Muay-thai-guy is a product review and blog app all rolled into one. This app
-            combines my long love of muay thai with my new and growing love of
-            programming. All opinions and reviews will be based off my 5 years of
-            expierence in Muay Thai.
+            A full CRUD app with authorization and authentication that is part blog and
+            part product review.
           </Card.Text>
         </Card.Body>
         <ListGroup className='list-group-flush'>
