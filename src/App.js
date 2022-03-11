@@ -9,7 +9,6 @@ function App() {
   return (
     <div id='home' className='App'>
       <Nav />
-      <h1>Hello</h1>
       <div className='app-container'>
         <div className='picture'>
           <img src={HEADSHOT} />
